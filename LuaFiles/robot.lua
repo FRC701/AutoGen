@@ -1,0 +1,30 @@
+static const double inchesPerFoot = 12.0;
+static const double secondsPerMinute = 60.0;
+static const double sampleIntervalSeconds = 0.01;
+static const double robotMaxVelocityFPS = 14.13;
+static const double maxVelocityFPS = robotMaxVelocityFPS * 0.75;
+static const double maxAccelerationFPSPS = maxVelocityFPS * 2.0;
+static const double maxJerkFPSPSPS = 60.0;
+static const double autoLineDistanceInches = 120.0;
+static const double autoLineDistanceFeet = autoLineDistanceInches / inchesPerFoot;
+static const double bumperThicknessInches = 3.25;
+static const double robotLengthFeet = 32 + (bumperThicknessInches * 2) / inchesPerFoot;
+static const double autoRunDistanceFeet = autoLineDistanceFeet - (robotLengthFeet / 2.0);
+static const double centerLineFeet = 13.5;
+static const double robotWidthFeet = (27 + (bumperThicknessInches * 2));
+static const double centerStartFeet = centerLineFeet - robotWidthFeet / 2;
+static const double switchDistanceFeet = 140.0 / inchesPerFoot;
+static const double leftSwitchDistanceFudgeFeet = 3.0;
+static const double rightSwitchDriveDistanceFeet = switchDistanceFeet - robotLengthFeet - leftSwitchDistanceFudgeFeet;
+static const double leftSwitchDriveDistanceFeet = switchDistanceFeet - robotLengthFeet - leftSwitchDistanceFudgeFeet;
+static const double cubePileDriveDistanceFeet = (98.0 / inchesPerFoot) - robotLengthFeet - (10.0 / inchesPerFoot);
+static const double rightSwitchFeet = 9 - 1.5;
+static const double leftSwitchFeet = 18;
+static const double leftStartFeet = (30 / inchesPerFoot) - (robotWidthFeet / 2);
+static const double leftScaleDistanceFudgeFeet = 0;
+static const double leftScaleDriveDistanceFeet = (324 / inchesPerFoot) + leftScaleDistanceFudgeFeet;
+static const double leftSideRightScaleFirstDriveDistanceFeet = 228.75 / inchesPerFoot;
+static const double leftSideRightScaleSecondDriveDistanceFeet = (264 / inchesPerFoot) - (robotLengthFeet / 2);
+static const double LeftSideRightScaleThirdDriveDistanceFeet = 324 / inchesPerFoot;
+
+
